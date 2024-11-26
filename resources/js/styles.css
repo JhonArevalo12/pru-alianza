@@ -1,0 +1,12 @@
+.container {
+    width: 1920px;       /* Ancho del contenedor */
+    height: 1078px;      /* Altura del contenedor */
+    position: relative;  /* Necesario para posicionar elementos hijos */
+    top: -109px;         /* Posición vertical */
+    left: -328px;        /* Posición horizontal */
+    overflow: hidden;    /* Ocultar cualquier contenido que se desborde */
+}
+
+.left-column {
+    position: relative;  /* Para que los elementos dentro puedan posicionarse correctamente */
+}
