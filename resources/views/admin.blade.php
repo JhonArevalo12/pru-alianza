@@ -73,13 +73,39 @@
         <div class="welcome-message">
             <h2>Bienvenida Elisa Gómez</h2>
             <p>Añade los datos personales de tus empleados y después agrega su cargo en tu empresa</p>
+            <div class="content">
+        <div class="welcome-message">
+            <h2>Bienvenida Elisa Gómez</h2>
+            <p>Añade los datos personales de tus empleados y después agrega su cargo en tu empresa</p>
         </div>
-        <div class="add-user">
-            <i class="user-icon">👤</i>
+        <div class="add-user" onclick="toggleForm()">
+            <i class="user-icon">👤 +</i> <!-- Icono con símbolo + -->
             <p>Empieza aquí</p>
         </div>
-        <img src="http://localhost:8000/images/some-image.png" alt="Imagen" style="width: 100%; max-width: 400px; margin-top: 20px;">
-    </div>
+
+        <div class="form-container" id="form-container">
+            <h3>Nuevo Empleado</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="identificacion">Identificación</label>
+                    <input type="text" class="form-control" id="identificacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" required>
+                </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
